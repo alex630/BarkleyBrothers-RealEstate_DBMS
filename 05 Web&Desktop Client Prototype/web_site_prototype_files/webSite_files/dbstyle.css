@@ -1,0 +1,234 @@
+/*
+Description: testing a database using combo mySql-PHP
+Author: L.R. Buitrago
+Author URI: http://www.blesolutions.com
+Date: April 19/2014
+*/
+
+/*Font for the forms of database*/
+.style1 {
+	font-family: "Adobe Garamond Pro";
+	font-size: 22px;
+	color:#495561;
+	text-decoration: none;
+	text-align:left;
+	background-color: white;
+	display: inline-table;
+}
+/*Font for company description next to picture*/
+.style2 {
+	font-family: "Adobe Garamond Pro";
+	font-size: 28px;
+	color:#495561;
+	text-decoration: none;
+	display: inline-table;
+}
+/*font for the footer*/
+.style3 {
+	font-family: "Adobe Garamond Pro";
+	font-size: 14px;
+	color:#495561;
+	text-decoration: none;
+	text-align:center;
+}
+.style3 a {
+	color:#495561;
+	text-decoration:underline;
+}
+.style3 a:hover {
+	color: #0F269C;
+}
+/*for the link buttons only*/
+.style4 {
+	border:medium #AAC2DA outset;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	font-family: "Adobe Garamond Pro";
+	font-size: 18px;
+	color:#495561;
+	margin-right: 23.5%;
+	margin-left: 34%;
+	text-align: center;
+	display: inline-table;
+}
+.style4 a {
+	color:#495561;
+	background-color: #AAC2DA;
+	display: inline-table;	
+	text-decoration: none;
+}
+.style4 a:hover {
+	color: red;		/*it does not take it*/
+	text-decoration: none;
+	background-color: white ;		/*#0F269C for blue intense */
+	
+}
+/*for the tables display*/
+.style5 {
+	font-family: "Arial Unicode MS";
+	font-size: 16px;
+	color: #0F269C;
+}
+/*for the titles of internal pages*/
+.style6 {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 2.5em;
+	color: #77F6FC;
+	text-align: center;
+	background-color: #333333;
+	line-height: 90%;
+	padding-bottom: 25px;
+}
+
+/*the main frame special green*/
+#wrapper {
+	background-color: #83E54B;
+	height: auto;
+	width: 100%;
+}
+/*the whole content of the webpage in gray for maintenance*/
+#wrapper #cont {
+	background-color: white; /*#C2C9D1; for maintenance purposes*/
+	height: auto;
+	width: 75%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+/*Company description, search area */
+#wrapper #cont #desc1 {
+	background-color: white; /*red for maintenance purposes*/
+	height: auto;		/*it was 220px*/
+	width: 40%;
+	float:left;	
+	padding-left:5%;
+	padding-right:5%;
+	padding-top:30px;
+	display: inline-table;	
+}
+#wrapper #cont #holder #filter {
+	background-color: white; /* #91F7F7 fluorescent blue for maintenance purposes*/
+	height: auto;
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;	
+	padding-left:5%;
+	padding-right:4%;
+	padding-top:30px;
+	padding-bottom: 30px;
+	border: 3px solid #C574FA;
+	/*margin: 5%;*/
+	border-radius: 30px;
+	/*display: inline-table;*/	
+}
+/*Table display area*/
+#wrapper #cont #holder #desc2 {
+	background-color: #E0E1E3; /* grey and green for maintenance purposes*/
+	height: auto;
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;	
+	padding-left:5%;
+	padding-right:5%;
+	padding-top:30px;
+	padding-bottom: 30px;
+	/*display: inline-table;*/	
+}
+/*company's main picture*/
+#wrapper #cont #pic1 {
+	background-color: #99E884;
+	height: 250px;
+	width: 380px;
+	float:left;
+	display: inline-table;
+}
+/*this container for the frame of content1 and content2 used independently*/
+#wrapper #cont #holder {
+	background: white;	/*yellow  for maintenance purposes */
+	height: auto;		/*it was 250px*/
+	width:100%;
+	margin-top: 15px;
+	display: table;
+}
+
+/*Buttons to link to other internal pages */ 
+#wrapper #cont #buttons {
+	background-color: white;
+	height: 120px;
+	width: 33.5%;
+	float:left;
+	border: 10px solid #AAC2DA;
+	margin: 5%;
+	border-radius: 30px;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	/*padding-left:3.5%;*/
+	padding-right:3.5%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	box-shadow: 15px 15px 10px #888;
+	-moz-box-shadow: 15px 15px 10px #888;
+	-webkit-box-shadow: 15px 15px 10px #888;
+	text-align:left;
+	display: inline-table;
+}
+#wrapper #cont #buttons a:hover{
+	color: #0F269C;
+}
+
+/*the footer of the webpage in vivid green for maintenance*/
+#wrapper #cont #end {
+	background-color: white; /* #99FF33 for maintenance purposes*/
+	height: 40px;
+	width: 100%;
+	margin-top:40px;
+	display: inline-table;
+}
+
+/*space for the logo picture orange for maintenance purposes*/
+#wrapper #cont #logo {
+	background-color: white; /*#FFCC00; for maintenance purposes*/
+	height: 100px;
+	width: 80%;
+	margin-bottom:20px;
+	font-family: 'Sofadi One', cursive, 'Arial Unicode MS';
+	font-size: 3em;
+	font-weight: bold;
+	color: #33FF00;
+}
+/*the menu color blue intense*/
+#wrapper #cont #menu {
+	font-family: "Arial Unicode MS";
+	font-size: 16px;
+	font-weight: bold;
+	color:white;
+	text-decoration: none;
+	height: 40px;
+	width: 100%;
+	background-color:#B5AABE;  
+	line-height: 220%;
+	margin-top: 10px;
+	display: inline-table;
+	/*margin-bottom: 10px;*/
+}
+#wrapper #cont #menu a {
+	color: white;
+	padding-right: 10px;
+	padding-left: 10px;
+	float: left;
+	height: inherit;
+	text-decoration: none;
+	width: 17%;
+	text-align:center;
+	display: inline-table;
+}
+#wrapper #cont #menu a:hover {
+	color: #A653DD;	
+}
+
+* {
+	margin: 0px;
+}
